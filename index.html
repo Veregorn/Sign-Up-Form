@@ -8,9 +8,40 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <div class="left">
+    <div class="left-container">
+        <div class="logo-band">
+            <img src="./odin-lined.png" alt="odin-logo">
+            <p class="logo-text">ODIN</p>
+        </div>
         <p>Photo by <a href="https://unsplash.com/es/@jonadalan">Jon Anders Dalan</a> on <a href="https://unsplash.com/es/fotos/jCF6FdjqRA8">Unsplash</a></p>
     </div>
-    <div class="right"></div>
+    <div class="right-container">
+        <p class="descript">This is not a real online service! You know you need something</p>
+        <p class="descript">like this in your life  to help you realize your deepest dreams.</p>
+        <p class="descript">Sign up <em>now</em> to get started.</p>
+
+        <p class="caption">You <em>know</em> you want to.</p>
+        <form action="" method="post">
+            <div class="form-div">
+                <fieldset>
+                    <legend>Let's do this!</legend>
+                    <label for="name">FIRST NAME</label>
+                    <input type="text" name="name" id="name">
+                    <label for="surname">LAST NAME</label>
+                    <input type="text" name="surname" id="surname">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" name="phone" id="phone">
+                    <label for="pass">PASSWORD</label>
+                    <input type="password" name="pass" id="pass">
+                    <label for="repass">CONFIRM PASSWORD</label>
+                    <input type="password" name="repass" id="repass">
+                </fieldset>
+            </div>
+            <button type="submit">Create Account</button>
+            <p class="login">Already have an account? <a href="">Log in</a></p>
+        </form>
+    </div>
 </body>
 </html>
