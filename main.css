@@ -32,6 +32,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     display: flex;
+    width: 1440px;
+    height: 1024px;
+    align-items: stretch;
 }
 ol, ul {
 	list-style: none;
@@ -51,6 +54,50 @@ table {
 
 /* MY OWN CODE */
 
+@font-face {
+    font-family: norse-bold;
+    src: url(./Norse-Bold.otf);
+}
+
 .left-container {
-    background-image: url(./snow-bg.jpg);
+    background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 200px;
+}
+
+.right-container {
+    flex: 2 1 200px;
+}
+
+.logo-band {
+    margin-top: 40%;
+    background-color: rgba(0,0,0,0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.logo-band img {
+    width: 100px;
+}
+
+.logo-text {
+    font-family: norse-bold, sans-serif;
+    color: #fff;
+    font-size: 100px;
+    margin-top: 25px;
+}
+
+.image-credits {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.image-credits a, a:visited {
+    color: #fff;
 }
