@@ -23,21 +23,42 @@
         <p class="caption">You <em>know</em> you want to.</p>
         <form action="" method="post">
             <div class="form-div">
-                <fieldset>
-                    <legend>Let's do this!</legend>
-                    <label for="name">FIRST NAME</label>
-                    <input type="text" name="name" id="name">
-                    <label for="surname">LAST NAME</label>
-                    <input type="text" name="surname" id="surname">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" name="phone" id="phone">
-                    <label for="pass">PASSWORD</label>
-                    <input type="password" name="pass" id="pass">
-                    <label for="repass">CONFIRM PASSWORD</label>
-                    <input type="password" name="repass" id="repass">
-                </fieldset>
+                <legend>Let's do this!</legend>
+                <div class="left-form">
+                    <ul>
+                        <li>
+                            <label for="name">FIRST NAME</label>
+                            <input type="text" name="name" id="name" placeholder="Thor">
+                        </li>
+                        <li>
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                        </li>
+                        <li>
+                            <label for="pass">PASSWORD</label>
+                            <input type="password" name="pass" id="pass" class="error">
+                        </li>
+                        <li>
+                            <p class="error-msg">* Passwords do not match</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-form">
+                    <ul>
+                        <li>
+                            <label for="surname">LAST NAME</label>
+                            <input type="text" name="surname" id="surname" placeholder="Odinson ">
+                        </li>
+                        <li>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" name="phone" id="phone">
+                        </li>
+                        <li>
+                            <label for="repass">CONFIRM PASSWORD</label>
+                            <input type="password" name="repass" id="repass" class="error">
+                        </li>
+                    </ul>
+                </div>
             </div>
             <button type="submit">Create Account</button>
             <p class="login">Already have an account? <a href="">Log in</a></p>

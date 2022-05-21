@@ -35,6 +35,7 @@ body {
     width: 1440px;
     height: 1024px;
     align-items: stretch;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -70,6 +71,7 @@ table {
 
 .right-container {
     flex: 2 1 200px;
+    background-color: #F8F9FA;
 }
 
 .logo-band {
@@ -100,4 +102,107 @@ table {
 
 .image-credits a, a:visited {
     color: #fff;
+}
+
+.right-container p:first-child {
+    margin-top: 180px;
+}
+
+.right-container p {
+    padding-left: 40px;
+}
+
+.right-container a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.descript, .caption, legend {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.descript {
+    line-height: 30px;
+}
+
+em {
+    font-style: italic;
+}
+
+.caption {
+    margin-top: 40px;
+}
+
+.form-div {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 40px 20px 40px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 5px 10px -6px rgb(98, 96, 96);
+}
+
+legend {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+}
+
+.left-form {
+    margin-right: 80px;
+}
+
+label {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: rgba(0,0,0,0.85);
+    display: block;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-color: #E5E7EB;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #FFFEFE;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-left: 10px;
+    color: #000;
+}
+
+input:focus {
+    border-color: #7380D9;
+    box-shadow:rgb(98, 96, 96);
+}
+
+button {
+    margin: 40px;
+    padding: 15px 50px;
+    background-color: #596D48;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.login {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.error {
+    border-color: rgb(196, 62, 62);
+}
+
+.error-msg {
+    color: rgb(196, 62, 62);
+    margin-top: -20px !important;
+    margin-left: -40px;
+    font-size: 13px;
 }
