@@ -55,6 +55,11 @@ table {
 
 /* MY OWN CODE */
 
+/* Without this reset style, my own focus style doesn't work */
+*:focus {
+    outline: none;
+}
+
 @font-face {
     font-family: norse-bold;
     src: url(./Norse-Bold.otf);
@@ -179,7 +184,7 @@ input {
 
 input:focus {
     border-color: #7380D9;
-    box-shadow:rgb(98, 96, 96);
+    box-shadow: 1px 1px 1px 1px rgb(203, 202, 202);
 }
 
 button {
